@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>台灣夜市美食地圖</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #fffaf0;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #ffcc70, #ff7e5f);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1em;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 16px;
+    }
+
+    .card-content h2 {
+      margin: 0 0 8px;
+      font-size: 1.4em;
+      color: #d35400;
+    }
+
+    .card-content p {
+      font-size: 0.95em;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      padding: 30px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>台灣夜市美食地圖</h1>
+    <p>探索最道地的小吃傳奇，讓味蕾旅行！</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <img src="images/yansuji.jpg" alt="鹽酥雞">
+      <div class="card-content">
+        <h2>鹽酥雞</h2>
+        <p>炸得酥脆的鹽酥雞，搭配九層塔香氣十足。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/oysteromelet.jpg" alt="蚵仔煎">
+      <div class="card-content">
+        <h2>蚵仔煎</h2>
+        <p>蛋香與醬汁交織的傳統美味，蚵仔飽滿滑順。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/sausage.jpg" alt="大腸包小腸">
+      <div class="card-content">
+        <h2>大腸包小腸</h2>
+        <p>米腸包香腸，外Q內香，最經典的台式雙重奏。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/stinkytofu.jpg" alt="臭豆腐">
+      <div class="card-content">
+        <h2>臭豆腐</h2>
+        <p>外酥內嫩、香氣撲鼻，是夜市必吃的挑戰系美食。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/chickensteak.jpg" alt="炸雞排">
+      <div class="card-content">
+        <h2>炸雞排</h2>
+        <p>酥炸雞排厚實多汁，一口咬下滿滿幸福感。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/bubbletea.jpg" alt="珍珠奶茶">
+      <div class="card-content">
+        <h2>珍珠奶茶</h2>
+        <p>黑糖珍珠與濃醇奶茶，甜在心頭滑在嘴裡。</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 台灣美食指南 Taiwan Taste Tour
+  </footer>
+
+</body>
+</html>
